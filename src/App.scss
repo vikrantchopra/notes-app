@@ -1,0 +1,65 @@
+@import "@material/typography/mdc-typography";
+
+
+	$color: blue;
+	main {
+		text-align: center;
+		padding: 1em;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		/*color: #ff3e00; */
+		color: $color;
+		text-transform: uppercase;
+		font-size: 4em;
+		font-weight: 100;
+	}
+
+	@media (min-width: 640px) {
+		main {
+			max-width: none;
+		}
+	}
+
+	.box {
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 125%;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.content {
+		grid-area: content;
+		background-color: rgb(166, 211, 201);
+		
+		display: grid;
+		grid-template: auto / 1fr 1fr 1fr;
+		gap: 5px;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.container {
+		display: grid;
+		gap: .5em;
+		grid-template-areas: "header" "content" "footer";
+		
+	}
+
+	.header, .footer {
+		background-color: #999;
+	}
+
+	.card-media-16x9 {
+		background-image: url(https://via.placeholder.com/320x180.png?text=16x9);
+	  }
+	  * :global(.card-media-square) {
+		background-image: url(https://via.placeholder.com/320x320.png?text=square);
+	  }
