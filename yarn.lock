@@ -57,6 +57,36 @@
     "@material/shape" "^3.1.0"
     "@material/theme" "^3.1.0"
 
+"@material/checkbox@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@material/checkbox/-/checkbox-3.2.0.tgz#168d4e16e160bec17948d06416935250fa10fac5"
+  integrity sha512-4XgQ4sM40j60n4RN43BxXtkFVvyFQgo/vc0W5hf9Qz2uwEah46Shg1nHMYZNvcNW+FXRm96gH8zz3qFgEf1ytA==
+  dependencies:
+    "@material/animation" "^3.1.0"
+    "@material/base" "^3.1.0"
+    "@material/dom" "^3.1.0"
+    "@material/feature-targeting" "^3.1.0"
+    "@material/ripple" "^3.2.0"
+    "@material/rtl" "^3.2.0"
+    "@material/theme" "^3.1.0"
+    tslib "^1.9.3"
+
+"@material/chips@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@material/chips/-/chips-3.2.0.tgz#29973a0b92b99f6d30fdcc086ec13f1a06d27663"
+  integrity sha512-XPm2RkqPFRog7hCMBTP4lM8AH9fqysXDMqf0ZomeJbFj4mkyalKsp45zrCR384gYjymwu99EHpcIs8L+gjVsrQ==
+  dependencies:
+    "@material/animation" "^3.1.0"
+    "@material/base" "^3.1.0"
+    "@material/checkbox" "^3.2.0"
+    "@material/elevation" "^3.1.0"
+    "@material/feature-targeting" "^3.1.0"
+    "@material/ripple" "^3.2.0"
+    "@material/shape" "^3.1.0"
+    "@material/theme" "^3.1.0"
+    "@material/typography" "^3.1.0"
+    tslib "^1.9.3"
+
 "@material/dom@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@material/dom/-/dom-3.1.0.tgz#1e58cad0cd5e1d9d6f6cb07422e327ad34a9d405"
@@ -215,10 +245,25 @@
     "@smui/icon-button" "^1.0.0-beta.18"
     "@smui/ripple" "^1.0.0-beta.18"
 
+"@smui/chips@^1.0.0-beta.19":
+  version "1.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@smui/chips/-/chips-1.0.0-beta.19.tgz#d3a27315b19cd1752153213a5f3444edac4766e1"
+  integrity sha512-LSo/tRwatbiNk7+8gormtOf6Lw08uI4YbZ9tzFc/afRWo2tMMnN6awQ6UFTGPWcID4/J37IQB4eQvDU9HD52xg==
+  dependencies:
+    "@material/chips" "^3.2.0"
+    "@smui/common" "^1.0.0-beta.19"
+
 "@smui/common@^1.0.0-beta.15":
   version "1.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@smui/common/-/common-1.0.0-beta.15.tgz#5f139b358335c9bee20b30980dab4220a44a1f89"
   integrity sha512-pbVULmyO6oB8fxLK5x9f5i/17WzOEiqzWl+ax9IlxYnM9lMTnCeQN3+YyQUAaFvjLcion9Kr+QEeiQfyzzm2DQ==
+  dependencies:
+    svelte "^3.0"
+
+"@smui/common@^1.0.0-beta.19":
+  version "1.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@smui/common/-/common-1.0.0-beta.19.tgz#ca3e79ac4d3bec9473d792b3a18b3772afd03357"
+  integrity sha512-PDRo2/VN6ZAP2JB4EIfn1eINAapzfbMj/3SH+3PBk0Pu1l8sT+QKOSMp8gdYvWrAFy2mgNGCkpSh+xAsc/sgVw==
   dependencies:
     svelte "^3.0"
 

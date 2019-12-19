@@ -1,4 +1,6 @@
 <script>
+
+	import Chip, {Set, Checkmark, Text} from '@smui/chips';
 	
 	import  {Label} from '@smui/button';
 	import Tab from '@smui/tab';
@@ -39,13 +41,20 @@
 	  {name: 'Svelte', component:SvelteCards}
   ];
   let selected = options[0];
+  let choice = options[0];
 
 </script>
 
 
 <div class="container">
+
+	
 	
 	<div class="box header">
+		<Set chips={options} let:chip choice bind:selected={choice}>
+			<Chip tabindex="0">{chip.name}</Chip>
+		</Set>
+
 		<TabBar tabs={options} let:tab bind:active={selected}>
 			<Tab {tab}>
 				
@@ -56,7 +65,7 @@
 	</div>
 
 	<div class="box content">
-	  <svelte:component this={selected.component}/>
+	  <svelte:component this={choice.component}/>
 	</div>
 
 

@@ -10,6 +10,7 @@
     "@material/typography": "^4.0.0",
     "@smui/button": "^1.0.0-beta.18",
     "@smui/card": "^1.0.0-beta.18",
+    "@smui/chips": "^1.0.0-beta.19",
     "@smui/tab": "^1.0.0-beta.18",
     "@smui/tab-bar": "^1.0.0-beta.18",
     "node-sass": "^4.13.0",
