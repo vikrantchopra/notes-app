@@ -1,15 +1,14 @@
 <script>
-	export let name;
-
-	import Card, {Content, PrimaryAction, Media, MediaContent, Actions, ActionButtons, ActionIcons} from '@smui/card'
-	import Button, {Label} from '@smui/button';
-	import IconButton, {Icon} from '@smui/icon-button';
+	
+	import  {Label} from '@smui/button';
 	import Tab from '@smui/tab';
 	import TabBar from '@smui/tab-bar';
 
 	import StylesData from './components/StylesData.svelte';
 	import PyData from './components/PyData.svelte';
-	import CardData from './components/CardData.svelte';
+	import JsData from './components/JsData.svelte';
+	import SvelteCards from './components/SvelteCards.svelte';
+	
 
 	function doAction(action) {
 		alert('You did an action ' + action);
@@ -35,7 +34,9 @@
 
   const options = [
 	  {name: 'styles', component: StylesData},
-	   {name: 'pandas', component: PyData},
+	  {name: 'python', component: PyData},
+	  {name: 'JavaScript', component:JsData},
+	  {name: 'Svelte', component:SvelteCards}
   ];
   let selected = options[0];
 
