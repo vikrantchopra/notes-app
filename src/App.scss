@@ -63,3 +63,7 @@
 	  * :global(.card-media-square) {
 		background-image: url(https://via.placeholder.com/320x320.png?text=square);
 	  }
+
+	  .card-content {
+		  min-height: 100px;
+	  }

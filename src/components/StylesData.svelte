@@ -29,10 +29,10 @@
 			<h2 class="mdc-typography--headline5" style="margin: 0;">{header}</h2>
 		</div>
 		
-		<Content class="mdc-typography--body2">
+		<Content class="mdc-typography--body2 card-content">
 			{content}
-			<p>{resource}</p>
+			
 		</Content>
-		<h5 class="mdc-typography--body2">{resource}</h5>
+		<h5 class="mdc-typography--body2" style="padding: 1rem; ">{resource}</h5>
 	</Card>
 {/each}

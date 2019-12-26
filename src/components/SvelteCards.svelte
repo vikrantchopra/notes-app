@@ -16,7 +16,7 @@
                 {id: 6, bullet: 'inside rollup.config.js ' + 
                         '  <br/>import postcss from "rollup-plugin-postcss"; ' + 
                         ' <br/>import autoPreprocess from "svelte-preprocess";' + 
-                        ' <br/>add preprocess: autoPreprocess() inside plugin->svelte block'}
+                        ' <br/>add preprocess: autoPreprocess() inside plugin: svelte block'}
             ]
             
         },
@@ -43,7 +43,7 @@
 			<h2 class="mdc-typography--headline5" style="margin: 0;">{header}</h2>
 		</div>
 		
-		<Content class="mdc-typography--body2">
+		<Content class="mdc-typography--body2 card-content">
             {#each content as {id, bullet}}
 			   <strong>{id}: </strong> {@html bullet} <br/>
 			{/each}
